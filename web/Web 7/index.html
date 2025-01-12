@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="startScreen">
+        <button id="playButton">Играть</button>
+        <button id="statsButton">Статистика</button>
+    </div>
+    <div id="nicknamesScreen" style="display: none;">
+        <input id="player1" type="text" placeholder="Имя игрока 1">
+        <input id="player2" type="text" placeholder="Имя игрока 2">
+        <button id="startGameButton">Начать игру</button>
+    </div>
+    <div id="gameScreen" style="display: none;">
+        <div id="board"></div>
+        <div id="gameLog"></div>
+        <button id="endGameButton">Завершить игру</button>
+    </div>
+    <div id="statsScreen" style="display: none;">
+        <div id="stats"></div>
+        <button id="backButton">Назад</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

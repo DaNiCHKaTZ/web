@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Nyasha Sans';
+    src: url();
+    src: local('Font Name'),
+        url('/Desktop/nyashasans.woff2') format('woff2'),
+        url('/Desktop/nyashasans.woff') format('woff'),
+        url('/Desktop/nyashasans.ttf') format('ttf'),
+        url('/Desktop/nyashasans.eot') format('eot');
+}
+
+.p5 {
+    display: flex;
+    align-items: center;
+}
+
+.p5 img {
+    margin-left: auto;
+}
+
+.text {
+    text-align: justify;
+}
+
+.p4 {
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;*/
+}
+
+.container div {
+    flex: 1;
+}
+
+.SQL {
+    font-family: 'Nyasha Sans';
+    font-size: 24px;
+    text-align: center;
+
+}
+
+
+
+.ping {
+    font-size: 18px;
+    text-align: left;
+
+
+}
+
+div.text p:first-child {
+    float: left;
+    width: 40%;
+    margin: 10px;
+}
+
+div.text img {
+    float: left;
+    width: 300px;
+}
+
+
+
+
+.modal {
+    font-family: 'Nyasha Sans';
+    font-size: 14px;
+    text-align: right;
+
+}
+
+.modale {
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.mod {
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.mode {
+    font-size: 14px;
+    text-align: left;
+}
+
+.mo {
+    font-size: 14px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.selector {
+    list-style: none;
+}
+
+.selector li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('icons8.png');
+    background-size: contain;
+    /* Масштабируем изображение */
+    background-repeat: no-repeat;
+    /* Предотвращаем повторение изображения */
+    margin-right: 10px;
+    /* Добавляем отступ справа */
+}
+
+
+
+table.t1 {
+    margin: 1em auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.t1 th,
+.t1 td {
+    padding: 4px 8px;
+}
+
+.t1 thead th {
+    background: #4f81bd;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+}
+
+.t1 tr {
+    border-right: 1px solid #95b3d7;
+}
+
+.t1 tbody tr {
+    border-bottom: 1px solid #95b3d7;
+}
+
+.t1 tbody tr:nth-child(odd) {
+    background: #dbe5f0;
+}
+
+.t1 tbody th,
+.t1 tbody tr:nth-child(even) td {
+    border-right: 1px solid #95b3d7;
+}
+
+.t1 tfoot th {
+    background: #4f81bd;
+    text-align: left;
+    font-weight: normal;
+    font-size: 10px;
+    color: #fff;
+}
+
+.t1 tr *:nth-child(3),
+.t1 tr *:nth-child(4) {
+    text-align: left;
+}

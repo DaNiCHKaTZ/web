@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form class="form">
+        <input type="text" class="input" id="username" placeholder="Имя пользователя">
+        <div class="error-message" id="username-error">Это поле обязательно для заполнения</div>
+        <input type="password" class="input" id="password" placeholder="Пароль">
+        <div class="error-message" id="password-error">Это поле обязательно для заполнения</div>
+        <input type="submit" id="submit" value="Зарегистрироваться">
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $("#submit").click(function (event) {
+                event.preventDefault(); // Предотвращает отправку формы
+                // Проверка полей ввода
+                if ($("#username").val() == "") {
+                    $("#username").addClass("error");
+                    $("#username-error").show();
+                }
+                if ($("#password").val() == "") {
+                    $("#password").addClass("error");
+                    $("#password-error").show();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

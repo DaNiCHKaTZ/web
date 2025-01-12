@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lab8</title>
+</head>
+
+<body>
+    <input type="text" id="url" placeholder="Введите URL">
+    <button onclick="fetchUrl()">Загрузить</button>
+    <div id="sait"></div>
+
+    <script>
+        function fetchUrl() {
+            let url = document.getElementById('url').value;
+            if (url === '')
+            {
+            alert('Введите Url.'); 
+            return; 
+            } 
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('sait').innerHTML = data;
+                })
+                .catch(error => {
+                    document.getElementById('sait').innerHTML = 'Error: ' + error;
+                });
+        }
+    </script>
+</body>
+
+</html>

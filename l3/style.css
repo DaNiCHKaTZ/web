@@ -1,0 +1,17 @@
+icon {  
+    height: 50px; 
+    weight: 50px; 
+    align:left;
+    allign:top;
+    margin-left:200px;
+    margin-bottom:30px;
+}
+.button {
+   
+    border-radius: 8px;
+    moz-border-radius: 8px;
+    webkit-border-radius: 8px;
+    height: 30px;
+    width: 80px; 
+    background-color:#245ec6;
+}

@@ -1,0 +1,8 @@
+@mixin respond-to($media) {
+    @if $media == 'small' {
+      @media (max-width: 450px) { @content; }
+    } @else if $media == 'medium' {
+      @media (max-width: 650px) { @content; }
+    }
+  }
+  

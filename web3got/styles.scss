@@ -1,0 +1,116 @@
+@import 'variables';
+
+body {
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 520px;
+    min-height: 520px;
+}
+
+.rectangle {
+    background-color: $rectangle-background-color;
+    border-radius: 20px;
+    width: 80%;
+    height: 50%;
+    min-width: 320px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.icon {
+    max-width: $icon-max-width;
+    max-height: $icon-max-height;
+}
+
+.text {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: $text-font-size; 
+    text-align: left;
+    font-family: $text-font-family;
+    font-weight: bold ;
+    white-space: normal; 
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: $input-padding-top;
+    padding-left: $input-padding-left;
+    width: $input-width;
+    box-sizing: border-box; 
+    min-width: 200px;
+}
+
+.podpis {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: $podpis-font-size; 
+    text-align: left;
+    font-family: $podpis-font-family;
+}
+
+.input-field {
+    margin-top: $input-field-margin-top;
+    flex-grow: 1;
+    width: $input-field-width; 
+    height: $input-field-height;
+    box-sizing: border-box; 
+}
+
+.next {
+    background-color: $next-background-color;
+    color: $next-color;
+    padding: 10px 20px;
+    position: absolute; 
+    border-radius: 25px;
+    bottom: 20px;
+    right: 50px;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .red-text {
+        color: red;
+    }
+    .rectangle {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .input {
+        padding-left: 0;
+        padding-top: 20px;
+        width: 100%; 
+        align-items: center; 
+    }
+    .next {
+        position: left; 
+        margin-top: 20px; 
+    }
+    .error {
+        color: $error-color;
+        font-size: $error-font-size;
+        display: block;
+    } 
+
+    .input-field.error-field {
+        border: $error-field-border; 
+        color: $error-field-color;
+    }
+}

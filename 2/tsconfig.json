@@ -1,0 +1,14 @@
+{
+
+	"compilerOptions": {
+	"target": "es6",
+	"removeComments": true,
+			"experimentalDecorators": true,
+	"outFile": "main.js"
+	},
+	"files":[
+	"web_932.ts"
+	]
+	
+	}
+	

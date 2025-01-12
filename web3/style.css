@@ -1,0 +1,41 @@
+@import "reset-css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "form-styles";
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    outline: none;
+}
+.button {
+   
+    border-radius: 8px;
+    moz-border-radius: 8px;
+    webkit-border-radius: 8px;
+    height: 30px;
+    width: 80px; 
+    background-color:#245ec6;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+.box_round {
+    -moz-border-radius: 12px; 
+ -webkit-border-radius: 12px; 
+         border-radius: 120px; 
+}
+icon {  
+    height: 50px; 
+    weight: 50px; 
+    align:left;
+    allign:top;
+    margin-left:200px;
+    margin-bottom:30px;
+}

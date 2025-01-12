@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mixins';
+
+.sign-up-form {
+  font-family: $font-family;
+  width: 90%;
+  max-width: 768px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  @include respond-to('medium') {
+    max-width: 550px;
+  }
+
+  @include respond-to('small') {
+    width: 100%;
+    margin: 0;
+  }
+
+  .input-field {
+    margin-bottom: 15px;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+
+      &:focus {
+        border-color: $primary-color;
+      }
+    }
+
+    &.error input {
+      border-color: $error-color;
+    }
+
+    .error-message {
+      display: none;
+      color: $error-color;
+      font-size: 0.8em;
+    }
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
